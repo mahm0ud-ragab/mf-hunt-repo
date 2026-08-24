@@ -3,10 +3,10 @@ queue_rules:
     queue_conditions:
       - base=main
 pull_request_rules:
-  - name: label
+  - name: label from branch
     conditions:
-      - base=main
+      - head=hunt-feature
     actions:
       label:
         add:
-          - test
+          - hunted
