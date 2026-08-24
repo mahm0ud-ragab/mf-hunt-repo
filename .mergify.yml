@@ -1,0 +1,12 @@
+queue_rules:
+  - name: default
+    queue_conditions:
+      - base=main
+pull_request_rules:
+  - name: label
+    conditions:
+      - base=main
+    actions:
+      label:
+        add:
+          - test
